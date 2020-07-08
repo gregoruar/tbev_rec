@@ -1,6 +1,6 @@
 # tbev_rec
 Code for automatisation of SSE and used sequence alignment
 
-Sequence alignment comes in two forms: the initial sequence alignment () and the alignment for SSE GS analysis (). All  sequences are annotated with number, Genbank ID and TBEV subtype after ">" in Fasta file.
-
+Sequence alignment comes in two forms: the initial sequence alignment (FILE_NAME) and the alignment for SSE GS analysis (FILE_NAME). All  sequences are annotated with number, Genbank ID and TBEV subtype after in Fasta file. SSE file already contains sequences divided into 4 groups used in the analysis: Siberina, Far-Eastern, OHFV, European. Sequences from 886-84-like group are represented by the consensus sequence on which the analysis was done.
+Folder Scripts contains scripts used for GSAUC analysis and its visualisation. For these scripts to work you have primarily to install SSE software (limitied to Windows OS) together with Phylip library to enable GS analysis. Next, you have to install pywinauto package on top of python3, used for automatisation of the GSAUC analysis. Pay attention to the version of pywinauto used in the analysis (v. 0.6.5), novel versions may not be compatible with the scripts.
 Script will likely not work on locked machines. You should either disable auto-locking of your local pc, or you may try improving script according to the guide: https://pywinauto.readthedocs.io/en/latest/remote_execution.html 
